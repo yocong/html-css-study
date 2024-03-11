@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Selector Challenge</title>
+    <style>
+      /* 
+      ### CSS 선택자 문제
+
+1. `id`가 "main-content"인 요소 내의 모든 `<span>` 태그를 선택하세요.
+2. 클래스가 "post"이면서 `data-status` 속성값이 "popular"인 `<article>` 요소 내부의 모든 `<p>` 태그를 선택하세요.
+3. `<nav>` 바로 다음에 오는 모든 `<ul>` 요소의 첫 번째 `<li>`를 선택하세요.
+4. `<article>` 요소 중 첫 번째 요소만 선택하세요.
+5. 모든 `<a>` 태그 중 "href" 속성값이 "#"으로 시작하는 요소를 선택하세요.
+6. "main-content" 바로 안의 첫 번째 `<article>` 요소를 제외한 모든 `<article>` 요소를 선택하세요.
+  
+      */
+      #main-content span {
+        background: pink;
+      }
+
+      article.post[data-status="popular"] p {
+        background: yellowgreen;
+      }
+
+      nav > ul li:nth-child(1) {
+        background: skyblue;
+      }
+
+      article:first-child {
+        background: orange;
+      }
+
+      a[href^="#"] {
+        background: olive;
+      }
+
+      #main-content article:not(:first-child) {
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main-content">
+      <article class="post" data-status="popular">
+        <h2>Most Popular Post</h2>
+        <p>Content of the most popular post...</p>
+        <footer>
+          <span class="date">2024-03-10</span>
+          <span class="author">Author 1</span>
+        </footer>
+      </article>
+      <article class="post" data-status="recent">
+        <h2>Recent Post</h2>
+        <p>Content of the recent post...</p>
+        <footer>
+          <span class="date">2024-03-11</span>
+          <span class="author">Author 2</span>
+        </footer>
+      </article>
+      <aside>
+        <div class="advertisement">
+          <p>Advertisement goes here...</p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </nav>
+      </aside>
+    </div>
+  </body>
+</html>
