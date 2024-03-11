@@ -1,0 +1,9 @@
+ul {
+  list-style: none;
+  border: 2px dashed tomato;
+}
+
+li {
+  color: red;
+  background: yellow;
+}
