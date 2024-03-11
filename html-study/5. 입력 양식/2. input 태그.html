@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input {
+        /* height: 100px; */
+        display: inline-block;
+      }
+      button {
+        /* width: 100px; */
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="https://naver.com">
+      <input type="text" value="춘식이" placeholder="아이디" readonly/> <br />
+      <input type="password" /> <br />
+      <input type="email" /> <br />
+      <input type="checkbox" name="hobby" /> 게임
+      <input type="checkbox" name="hobby" disabled /> 수영
+      <input type="checkbox" name="hobby" checked /> 축구
+      <br />
+      <input type="radio" name="mail" /> 예
+      <input type="radio" name="mail" disabled /> 아니오
+      <br />
+      <input type="number" value="7" min="0" max="10" />
+      <br />
+      <input type="range" value="7" min="0" max="109" />
+      <br />
+      <input type="file" multiple accept="image/*" />
+      <br />
+      <!-- 사용자 몰래 서버로 보낼 데이터 -->
+      <input type="hidden" name="nick" value="똥멍청이" />
+
+      <br />
+      <button type="button">button</button>
+      <button type="submit">submit</button>
+      <button type="reset">reset</button>
+      <br />
+      <!-- input으로 button 만들지마 직관성이 떨어짐-->
+      <input type="button" value="버튼" />
+    </form>
+  </body>
+</html>
