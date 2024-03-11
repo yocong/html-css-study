@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 홀짝은 2n, 2n+1도 되지만 키워드도 따로 있다.*/
+      #fruits li:nth-child(even) {
+        background: pink;
+      }
+
+      #fruits li:nth-child(odd) {
+        background: violet;
+      }
+
+      #food li:last-child {
+        background: aqua;
+      }
+
+      #food li:not(.melon) {
+        list-style: none;
+      }
+
+      .sports div:nth-child(3) {
+        background: blue;
+      }
+
+      .sports p:nth-of-type(2) {
+        background: blue;
+      }
+
+      .sports div:nth-of-type(3) {
+        background: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sports">
+      <div>축구</div>
+      <div>농구</div>
+      <p>하하호호</p>
+      <div>배구</div>
+      <div>야구</div>
+    </div>
+    <ul id="food">
+      <li class="melon">메론빵</li>
+      <li>버거킹</li>
+      <li>냉면</li>
+    </ul>
+    <ul id="fruits">
+      <li>딸기</li>
+      <li>망고</li>
+      <li>사과</li>
+      <li>오레지</li>
+      <li>바나나</li>
+      <li>자몽</li>
+      <li>라임</li>
+    </ul>
+  </body>
+</html>
