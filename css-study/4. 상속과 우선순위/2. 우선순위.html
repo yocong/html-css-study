@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 1점 */
+      div {
+        color: blue;
+      }
+      /* 100점 */
+      #c-y {
+        color: yellow;
+      }
+      /* 19점 */
+      .c-g {
+        color: green;
+      }
+      /* 1점 */
+      body {
+        color: aqua;
+      }
+      /* 1점 */
+      div {
+        color: red;
+      }
+
+      /* 1점 */
+      h1 {
+        color: lightcoral;
+      }
+
+      /* 다양하게 존재할 경우에는 합산으로! */
+
+      /* 11점 */
+      .bbb h1 {
+        color: orangered;
+      }
+      /* 101점 */
+      #aaa h1 {
+        color: gray;
+      }
+      /* 112점 */
+      #aaa div.bbb h1 {
+        color: greenyellow;
+      }
+      /* 111점 */
+      #aaa .bbb h1 {
+        color: tomato;
+      }
+      /* 12점 */
+      div.bbb > h1 {
+        color: violet;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="c-y" class="c-g" style="color: orange">안녕하세요1</div>
+    <div id="c-y" class="c-g">안녕하세요2</div>
+    <div class="c-g">안녕하세요3</div>
+    <div>안녕하세요4</div>
+    <p>안녕하세요5</p>
+
+    <!-- #aaa>.bbb>h1{안녕하세요6} -->
+    <div id="aaa">
+      <div class="bbb">
+        <h1>안녕하세요6</h1>
+      </div>
+    </div>
+  </body>
+</html>
