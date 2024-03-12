@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #hello {
+        background: red;
+        display: block;
+        width: 300px;
+        height: 300px;
+        margin-top: 200px;
+        padding: 10px;
+      }
+      .click {
+        width: 150px;
+        height: 100px;
+        background: greenyellow;
+      }
+      .click a {
+        border: 4px solid #000;
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+      .box {
+        margin-bottom: 50px;
+      }
+      .box input {
+        height: 40px;
+      }
+      .box input:nth-child(3) {
+        /* display: none; */
+        /* opacity: 0.3; */
+        visibility: hidden; /* opacity처럼 투명도가0이되면서 사라져서 입력커서도 안뜸*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <input type="text" value="1" />
+      <input type="text" value="2" />
+      <input type="text" value="3" />
+      <input type="text" value="4" />
+      <input type="text" value="5" />
+    </div>
+
+    <span id="hello">안뇽안뇽</span>
+    <div class="click">
+      <a href="">click me!</a>
+    </div>
+  </body>
+</html>

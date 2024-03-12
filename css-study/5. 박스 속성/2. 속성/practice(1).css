@@ -1,0 +1,31 @@
+#container {
+  width: 550px;
+  margin: 50px auto;
+  border: 3px double #123456;
+}
+
+section #title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  background: #abcdef;
+  padding: 20px 0;
+  border-bottom: 3px solid #123456;
+}
+
+section .content {
+  padding: 10px;
+}
+
+section .content h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+section .content p {
+  font-size: 0.8em;
+  padding-top: 5px;
+}
+
+section .content:last-child {
+  border-top: 3px dotted #123456;
+}
