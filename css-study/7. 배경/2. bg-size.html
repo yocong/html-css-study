@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        /* 사진 액자 400 x 300 = 4 : 3 */
+        width: 400px;
+        height: 300px;
+        border: 2px solid red;
+        margin: 50px auto;
+
+        /* 사진 사이즈 600 x 385 = 3 : 2 */
+        /* 가로를 맞춤 400 x 260 */
+        /* 세로를 맞춤 467 x 385 */
+        background-image: url(../../img/tulip.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -50px 0; /* 왼쪽을 더 보여주고싶으면 왼쪽으로 */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

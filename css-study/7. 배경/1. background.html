@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .box {
+        width: 550px;
+        height: 350px;
+        border: 4px dashed gray;
+        margin: 50px auto;
+
+        background-color: orange;
+        background-image: url("../../img/sky.jpg");
+
+        /* 배경 이미지 사이즈 조정 */
+        /* width height */
+        background-size: 100px 100px;
+        background-repeat: no-repeat;
+
+        /* 배경 이미지 위치 조정 */
+        /* x축  y축 */
+        background-position: 300px center;
+
+        background: no-repeat red url("../../img/sky.jpg") left center / 200px
+          70px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
