@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* ct 클래스를 추가하여 공통부분을 넣음 */
+      .ct {
+        width: 700px;
+        /* height: auto*/
+        padding: 20px;
+        border: 3px solid;
+        margin: 20px;
+        /* overflow: hidden; */
+      }
+      .container1 {
+        border-color: red;
+      }
+      /* 해제하는 클래스를 따로 만들어서 설정 */
+      .clearfix::after {
+        /* 
+          - 도형을 만드려면
+          display속성 필수
+          - before, after에는
+          content속성은
+          무조건 써야함
+        */
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .container2 {
+        border-color: blue;
+      }
+      .container3 {
+        border-color: orange;
+      }
+      .box {
+        width: 200px;
+        height: 150px;
+        border: 3px solid green;
+        background: yellowgreen;
+        border-radius: 20px;
+        float: left;
+      }
+      /* .vbox {
+        clear: both;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="ct container1 clearfix">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <!-- <div class="vbox"></div> -->
+    </div>
+    <div class="ct container2 clearfix">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <!-- <div class="vbox"></div> -->
+    </div>
+    <div class="ct container3 clearfix">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <!-- <div class="vbox"></div> -->
+    </div>
+  </body>
+</html>

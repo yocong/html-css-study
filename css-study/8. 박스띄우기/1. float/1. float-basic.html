@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 150px;
+        height: 150px;
+        background: orange;
+        border: 4px solid tomato;
+        font-size: 50px;
+        font-weight: 700;
+        margin: 10px;
+        border-radius: 20px;
+
+        /* 박스 수평 배치 */
+        float: left;
+      }
+      /* 
+        3열 : 3n + 1
+        x열 : xn + 1
+      */
+      .box:nth-child(3n + 1) {
+        /* 수평 배치 해제 */
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+      <div class="box">7</div>
+      <div class="box">8</div>
+      <div class="box">9</div>
+    </div>
+  </body>
+</html>

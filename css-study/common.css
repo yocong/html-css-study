@@ -1,0 +1,20 @@
+/* 공통 css를 적는 파일 */
+
+/* css파일이 다른 css파일을 불러오는 것 */
+/* 즉 common.css를 부르면 아래 reset.css도 같이 불러옴 */
+@import url("https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css");
+
+* {
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
