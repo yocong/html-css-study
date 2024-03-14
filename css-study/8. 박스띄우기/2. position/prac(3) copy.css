@@ -1,0 +1,32 @@
+@import url("../../common.css");
+
+body {
+  font-size: 14px;
+  background: #aaa;
+  font-family: "NGthic", sans-serif;
+}
+
+#wrapper {
+  background: #fff;
+  width: 70%;
+  margin: 0 auto;
+}
+
+#wrapper header {
+  border: 2px solid red;
+  color: #fff;
+  text-align: center;
+}
+
+#wrapper header h1{
+  border: 2px solid red;
+  color: #fff;
+  text-align: center;
+}
+
+#wrapper .container {
+  border: 2px solid blue;
+}
+#wrapper footer {
+  border: 2px solid yellow;
+}

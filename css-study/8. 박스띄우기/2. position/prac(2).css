@@ -1,0 +1,78 @@
+@import url("../../common.css");
+/* base style */
+#wrapper {
+  width: 80%;
+  margin: auto;
+  background: lightgray;
+}
+/* header style */
+header {
+  background: #123456;
+  padding: 30px 0;
+  text-align: center;
+}
+header h1 {
+  color: yellow;
+  font-size: 1.5em;
+}
+header h1 span {
+  color: yellow;
+  font-size: 2em;
+}
+header h1 em {
+  color: #fff;
+  font-size: 2.5em;
+}
+header h1 strong {
+  color: #fff;
+  font-size: 4em;
+}
+/* end header style */
+
+/* begin container style */
+#wrapper .container .menu {
+  background: lightgray;
+  padding: 20px 50px 20px 20px;
+  float: left;
+  line-height: 35px;
+  color: black;
+  text-decoration: underline;
+  width: 25%;
+}
+
+#wrapper .container .menu li a:hover {
+  color: #662;
+  border: 1px dashed #662;
+}
+
+#wrapper .container .content {
+  background: #fff;
+  float: left;
+  width: 75%;
+}
+
+#wrapper .container .content h2 {
+  background: brown;
+  color: yellow;
+  font-size: 1.8em;
+  font-family: serif;
+  font-weight: 700;
+  padding: 10px 20px;
+}
+
+#wrapper .container .content p {
+  padding: 20px;
+  line-height: 20px;
+}
+/* end container style */
+
+/* begin footer style */
+#wrapper footer {
+  background: darkgrey;
+}
+
+#wrapper footer address {
+  font-weight: 700;
+  padding: 20px 0 20px 20px;
+}
+/* end footer style */
