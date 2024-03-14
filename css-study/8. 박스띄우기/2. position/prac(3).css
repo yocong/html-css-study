@@ -1,0 +1,123 @@
+@import url("../../common.css");
+
+body {
+  background: gray;
+}
+#wrapper {
+  width: 80%;
+  margin: auto;
+}
+#wrapper header {
+  text-align: center;
+}
+#wrapper header h1 {
+  background: orange;
+  color: #fff;
+  font-size: 80px;
+  font-weight: 700;
+}
+
+#wrapper header h1 span {
+  display: block;
+  font-size: 20px;
+  padding: 15px 0;
+}
+
+#wrapper header h2 {
+  background: lightgray;
+  padding: 4px 0;
+}
+
+#wrapper .container {
+  background: #fff;
+}
+
+#wrapper .container .side-menu {
+  float: left;
+  width: 25%;
+  /* height: 500px; */
+  font-weight: 700;
+}
+
+#wrapper .container .side-menu h3 {
+  background: brown;
+  color: #fff;
+  padding: 8px;
+}
+
+#wrapper .container .side-menu ul li {
+  line-height: 30px;
+  text-decoration: underline;
+}
+
+#wrapper .container .main-content {
+  width: 50%;
+  float: left;
+  background: lightsteelblue;
+}
+
+#wrapper .container .main-content .art-piece {
+  margin: 10px;
+}
+
+#wrapper .container .main-content .art-piece .title {
+  background: rgb(50, 50, 119);
+  color: white;
+  padding: 5px;
+  font-weight: 700;
+}
+
+#wrapper .container .main-content .art-piece .artist {
+  padding: 15px 5px;
+  font-weight: 700;
+}
+
+#wrapper .container .main-content .art-piece .detail {
+  padding: 15px 5px;
+  font-size: 12px;
+}
+
+#wrapper .container .banner {
+  width: 25%;
+  float: left;
+  padding-left: 12px;
+}
+
+#wrapper .container .banner h3 {
+  font-size: 20px;
+  line-height: 30px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-weight: 700;
+}
+#wrapper .container .banner h3 .all {
+  display: block;
+  color: gray;
+  text-decoration: underline;
+}
+#wrapper .container .banner h3 .love {
+  display: block;
+  color: orange;
+  text-decoration: underline;
+}
+
+#wrapper .container .banner .link li a {
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#wrapper .container .banner .link li span {
+  display: block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  z-index: ;
+}
+
+#wrapper footer {
+  background: rgb(50, 50, 119);
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+  padding: 8px 0;
+}
