@@ -1,0 +1,35 @@
+@import url("../../common.css");
+
+section {
+  width: 60%;
+  background: pink;
+  border: 3px solid lightgray;
+  padding: 10px;
+  margin: 30px auto;
+  position: relative;
+}
+
+section h1 {
+  color: green;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+section ul {
+  font-size: 1.3em;
+  padding-left: 18px;
+  line-height: 30px;
+  color: gray;
+}
+
+section ul .manywatch {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+section ul .blue {
+  color: blue;
+  text-decoration: underline
+}
