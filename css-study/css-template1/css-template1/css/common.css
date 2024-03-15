@@ -1,0 +1,43 @@
+/* reset css */
+@import url("https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css");
+
+/* web fonts */
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap");
+
+/* font awesome */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css");
+
+/* reset */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button,
+input {
+  outline: none;
+  border: none;
+  color: inherit;
+}
+
+/* common */
+* {
+  box-sizing: border-box;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+body {
+  font-size: 14px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+/* english font */
+.en {
+  font-family: 'Exo 2', sans-serif;
+}
+
+/* 모바일에서는 줄바꿈 해제 */
+br.mo {
+  display: none;
+}
